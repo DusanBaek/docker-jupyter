@@ -57,6 +57,19 @@ Use the output of the command to set the `NotebookApp.password` key.
 If you choose to set ssl certificates, place them in the `./config` folder and state the location of the files
 as absolute paths in `./config/jupyter-config.json` starting with `/home/jovyan/work`:
 
+1. Generating pem, key
+```shell
+$ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ssl-cert.key -out ssl-cert.pem
+```
+
+2. Copying the pem and the key into .config directory
+```shell
+$ cp ~/.ssl/ssl-cert.pem ./config
+$ cp ~/.ssl/ssl-cert.key ./config
+```
+
+3. Setting jupyter-config.json
+
 ```json
 {
   "NotebookApp": {

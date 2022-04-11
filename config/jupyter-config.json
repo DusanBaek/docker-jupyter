@@ -1,8 +1,10 @@
 {
   "NotebookApp": {
-    "password": "sha1:bd276922ddbf:165ac3bd7af7adf7c9f61804927b79411719fd99",
+    "password": "sha1:76960e63b235:41bddb203b8016278e57003ec0356a540159aa12",
     "ip": "*",
     "port": 8888,
-    "notebook_dir": "/home/jovyan/work"
+    "notebook_dir": "/home/jovyan/work",
+    "certfile": "/home/jovyan/.jupyter/config/ssl-cert.pem",
+    "keyfile": "/home/jovyan/.jupyter/config/ssl-cert.key"
   }
 }
